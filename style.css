@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  --darkorange: #ff4b0e;
+  --lightorange: #fd9d2d;
+  --bg: #feecd8;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg);
+}
+/* === CLASSES GLOBAIS === */
+.content {
+  max-width: 1300px;
+  margin: auto;
+}
+.button {
+  background-color: var(--darkorange);
+  border: 4px solid black;
+  padding: 10px 40px;
+  box-shadow: 3px 3px 0px black;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: black;
+  transition: all 0.3s;
+}
+.button:hover {
+  background-color: var(--lightorange);
+}
+/* === HEADER === */
+header {
+  padding: 20px 60px;
+  border-bottom: 2px solid black;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 1300px;
+}
+
+header h1 {
+  font-weight: 900;
+}
+header nav {
+  display: flex;
+  gap: 40px;
+}
+header nav a {
+  color: black;
+  font-weight: bold;
+  line-height: 40px;
+  border-bottom: 3px solid var(--bg);
+  transition: all 0.3s;
+}
+header nav a:hover {
+  border-bottom: 3px solid var(--darkorange);
+  transform: scale(1.1);
+}
+
+/* === CONTENT === */
+section {
+  padding: 80px;
+}
+
+/* === FIRST SECTION === */
+div#first-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+div#first-section .content-textuals {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  width: 40%;
+}
+div#first-section .content-textuals h2 {
+  color: black;
+  font-weight: 800;
+  line-height: 50px;
+  font-size: 50px;
+}
+div#first-section .content-textuals h2 span {
+  color: var(--darkorange);
+}
+div#first-section .content-textuals p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+div#first-section .image-container {
+  width: 60%;
+}
+div#first-section .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* === SECOND SECTION === */
+section#second-section {
+  border-bottom: 2px solid black;
+}
+section#second-section .content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+section#second-section .content .card {
+  border: 4px solid black;
+  box-shadow: 3px 3px 0px black;
+  padding: 30px;
+  width: 300px;
+  position: relative;
+}
+.card img {
+  width: 50px;
+}
+.card h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 5px;
+}
+.card p {
+  margin: 20px auto;
+}
+.card a {
+  position: relative;
+  left: 180px;
+  top: 20px;
+}
+.card:nth-child(1),
+.card:nth-child(3) {
+  background-color: var(--darkorange);
+}
+.card:nth-child(2),
+.card:nth-child(4) {
+  position: relative;
+  top: 20px;
+  background-color: var(--lightorange);
+}
+
+section#second-section .about-more {
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.about-more h2 {
+  margin: 60px auto;
+  font-size: 45px;
+}
+.about-more h2 span {
+  color: var(--darkorange);
+}
+
+/* === FOOTER === */
+footer {
+  padding: 70px;
+}
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer-texts {
+  width: 33%;
+}
+.logo-footer h1 {
+  line-height: 20px;
+}
+.logo-footer h2 {
+  font-size: 20px;
+}
+.footer-texts p {
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+footer .content nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 20px;
+}
+footer .content nav a {
+  color: black;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+footer .content nav a:hover {
+  transform: scale(1.1);
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+.footer-form input {
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 0px black;
+  outline: none;
+}
+.footer-form button {
+  width: max-content;
+  cursor: pointer;
+}
